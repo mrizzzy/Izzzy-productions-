@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZZZY PRODUCTIONS | Create. Design. Learn. Automate. Grow.</title>
+    
+    <!-- Comprehensive SEO Meta Tags for Search Engine Indexing -->
+    <meta name="description" content="IZZZY PRODUCTIONS is a premier creative technology and digital solutions company offering professional graphic design, video editing, AI automation, 2D/3D animation, and digital education.">
+    <meta name="keywords" content="IZZZY Productions, Graphic Design, Video Editing, AI Automation, Digital Education, Web Development, 3D Animation, Branding, Creative Agency">
+    <meta name="author" content="IZZZY PRODUCTIONS">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://izzzy-productions.floot.app">
+
+    <!-- Open Graph / Social Media Sharing Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://izzzy-productions.floot.app">
+    <meta property="og:title" content="IZZZY PRODUCTIONS | Create. Design. Learn. Automate. Grow.">
+    <meta property="og:description" content="Bring your creative ideas to life with professional graphic design, video editing, AI tools, and digital learning.">
+    <meta property="og:image" content="https://placehold.co/1200x630/4c1d95/ffffff?text=IZZZY+PRODUCTIONS">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IZZZY PRODUCTIONS | Create. Design. Learn. Automate. Grow.">
+    <meta name="twitter:description" content="Professional graphic design, video editing, AI automation, and digital education solutions.">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/4c1d95/ffffff?text=IZZZY+PRODUCTIONS">
+
+    <!-- Structured Data (Schema.org JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "IZZZY PRODUCTIONS",
+      "image": "https://placehold.co/600x600/4c1d95/ffffff?text=IP",
+      "url": "https://izzzy-productions.floot.app",
+      "telephone": "+2349055852274",
+      "email": "mrizzzy42@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NG"
+      },
+      "sameAs": [
+        "https://facebook.com",
+        "https://izzzy-productions.floot.app"
+      ],
+      "description": "Creative technology company specializing in graphic design, video editing, AI automation, and digital education."
+    }
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            900: '#4c1d95',
+                            dark: '#0f0a1a',
+                            card: '#1a102f'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(26, 16, 47, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+        .glow-effect {
+            box-shadow: 0 0 35px rgba(139, 92, 246, 0.35);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f0a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4c1d95;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7c3aed;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-100 min-h-screen flex flex-col selection:bg-purple-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 glass-panel border-b border-purple-900/40 px-4 lg:px-8 py-3.5 transition-all">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('home')">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center glow-effect text-white font-extrabold text-xl">
+                    IP
+                </div>
+                <div>
+                    <span class="text-lg lg:text-xl font-extrabold tracking-wider gradient-text">IZZZY PRODUCTIONS</span>
+                    <p class="text-[10px] uppercase tracking-widest text-purple-400 font-semibold">Create . Design . Learn . Grow</p>
+                </div>
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                <button onclick="switchTab('home')" id="nav-home" class="nav-btn px-3 py-2 rounded-lg transition text-purple-300 hover:text-white hover:bg-purple-900/40">Home</button>
+                <button onclick="switchTab('studio')" id="nav-studio" class="nav-btn px-3 py-2 rounded-lg transition text-purple-300 hover:text-white hover:bg-purple-900/40 flex items-center space-x-1.5"><i class="fa-solid fa-wand-magic-sparkles text-pink-400"></i><span>AI Studio</span></button>
+                <button onclick="switchTab('assistant')" id="nav-assistant" class="nav-btn px-3 py-2 rounded-lg transition text-purple-300 hover:text-white hover:bg-purple-900/40 flex items-center space-x-1.5"><i class="fa-solid fa-robot text-purple-400"></i><span>AI Expert</span></button>
+                <button onclick="switchTab('learning')" id="nav-learning" class="nav-btn px-3 py-2 rounded-lg transition text-purple-300 hover:text-white hover:bg-purple-900/40 flex items-center space-x-1.5"><i class="fa-solid fa-graduation-cap text-cyan-400"></i><span>Learn Hub</span></button>
+                <button onclick="switchTab('booking')" id="nav-booking" class="nav-btn px-3 py-2 rounded-lg transition text-purple-300 hover:text-white hover:bg-purple-900/40 flex items-center space-x-1.5"><i class="fa-solid fa-calendar-check text-emerald-400"></i><span>Book Service</span></button>
+                <button onclick="switchTab('about')" id="nav-about" class="nav-btn px-3 py-2 rounded-lg transition text-purple-300 hover:text-white hover:bg-purple-900/40">About</button>
+            </nav>
+
+            <!-- Credit & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-3">
+                <div class="bg-purple-950/80 border border-purple-700/50 px-3 py-1.5 rounded-full flex items-center space-x-2 shadow-inner">
+                    <i class="fa-solid fa-bolt text-amber-400 text-xs animate-pulse"></i>
+                    <span class="text-xs font-bold"><span id="credit-count">15</span> / 20 Credits</span>
+                    <button onclick="openCreditModal()" class="ml-1 text-[10px] bg-purple-600 hover:bg-purple-500 px-2 py-0.5 rounded-full text-white font-bold transition">+</button>
+                </div>
+
+                <button onclick="toggleMobileMenu()" class="md:hidden text-purple-300 hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden mt-3 pt-3 border-t border-purple-900/50 flex flex-col space-y-2 pb-2">
+            <button onclick="switchTab('home'); toggleMobileMenu();" class="text-left px-3 py-2 rounded-lg hover:bg-purple-900/40">Home</button>
+            <button onclick="switchTab('studio'); toggleMobileMenu();" class="text-left px-3 py-2 rounded-lg hover:bg-purple-900/40 flex items-center space-x-2"><i class="fa-solid fa-wand-magic-sparkles text-pink-400"></i><span>AI Studio</span></button>
+            <button onclick="switchTab('assistant'); toggleMobileMenu();" class="text-left px-3 py-2 rounded-lg hover:bg-purple-900/40 flex items-center space-x-2"><i class="fa-solid fa-robot text-purple-400"></i><span>AI Expert Chat</span></button>
+            <button onclick="switchTab('learning'); toggleMobileMenu();" class="text-left px-3 py-2 rounded-lg hover:bg-purple-900/40 flex items-center space-x-2"><i class="fa-solid fa-graduation-cap text-cyan-400"></i><span>Learning Hub</span></button>
+            <button onclick="switchTab('booking'); toggleMobileMenu();" class="text-left px-3 py-2 rounded-lg hover:bg-purple-900/40 flex items-center space-x-2"><i class="fa-solid fa-calendar-check text-emerald-400"></i><span>Book Service</span></button>
+            <button onclick="switchTab('about'); toggleMobileMenu();" class="text-left px-3 py-2 rounded-lg hover:bg-purple-900/40">About Us</button>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 lg:px-8 py-6">
+
+        <!-- HOME VIEW -->
+        <section id="view-home" class="view-section space-y-12">
+            <!-- Hero Section -->
+            <div class="relative overflow-hidden rounded-3xl glass-panel p-8 lg:p-14 border border-purple-500/30 glow-effect">
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-20 -top-20 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 max-w-3xl space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-purple-900/60 border border-purple-500/40 px-3.5 py-1.5 rounded-full text-xs font-semibold text-purple-300">
+                        <i class="fa-solid fa-sparkles text-pink-400"></i>
+                        <span>CREATE . DESIGN . LEARN . AUTOMATE . GROW</span>
+                    </div>
+                    <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Your Creativity, <br><span class="gradient-text">Our Innovation.</span>
+                    </h1>
+                    <p class="text-slate-300 text-base lg:text-lg leading-relaxed">
+                        IZZZY PRODUCTIONS is a creative technology and digital solutions company dedicated to bringing your ideas to life through professional graphic design, video editing, AI automation, and digital education.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <button onclick="switchTab('studio')" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center space-x-2">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Try AI Studio</span>
+                        </button>
+                        <button onclick="switchTab('booking')" class="bg-purple-950/80 border border-purple-600 hover:bg-purple-900 text-purple-200 font-bold px-7 py-3.5 rounded-xl transition flex items-center space-x-2">
+                            <i class="fa-solid fa-calendar-days text-emerald-400"></i>
+                            <span>Book a Service</span>
+                        </button>
+                        <button onclick="switchTab('learning')" class="bg-slate-900/80 border border-slate-700 hover:bg-slate-800 text-slate-200 font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2">
+                            <i class="fa-solid fa-book-open text-cyan-400"></i>
+                            <span>Explore Learning Hub</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats / Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="glass-panel p-6 rounded-2xl text-center border border-purple-900/40">
+                    <div class="text-3xl font-extrabold text-purple-400 mb-1">8+</div>
+                    <div class="text-xs text-slate-400 font-medium">Professional Services</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center border border-purple-900/40">
+                    <div class="text-3xl font-extrabold text-pink-400 mb-1">AI</div>
+                    <div class="text-xs text-slate-400 font-medium">Powered Workflows</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center border border-purple-900/40">
+                    <div class="text-3xl font-extrabold text-cyan-400 mb-1">100%</div>
+                    <div class="text-xs text-slate-400 font-medium">Client Satisfaction</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center border border-purple-900/40">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">24/7</div>
+                    <div class="text-xs text-slate-400 font-medium">Digital Education</div>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-purple-400">What We Offer</span>
+                        <h2 class="text-2xl lg:text-3xl font-extrabold text-white mt-1">Our Professional Services</h2>
+                    </div>
+                    <button onclick="switchTab('booking')" class="text-sm font-semibold text-purple-400 hover:text-purple-300 mt-2 md:mt-0 flex items-center space-x-1">
+                        <span>View All & Book</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service 1 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-purple-500/50 transition group">
+                        <div class="w-12 h-12 rounded-xl bg-purple-900/50 text-purple-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Graphic Design</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">Professional logos, flyers, posters, banners, social media designs, business cards, and branding materials.</p>
+                        <button onclick="selectServiceForBooking('Graphic Design')" class="text-xs font-bold text-purple-400 hover:text-purple-300 flex items-center space-x-1">
+                            <span>Book Service</span>
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-purple-500/50 transition group">
+                        <div class="w-12 h-12 rounded-xl bg-pink-900/50 text-pink-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-clapperboard"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Video Editing</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">High-quality video editing for advertisements, promotional campaigns, social media content, and cinematic productions.</p>
+                        <button onclick="selectServiceForBooking('Video Editing')" class="text-xs font-bold text-pink-400 hover:text-pink-300 flex items-center space-x-1">
+                            <span>Book Service</span>
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-purple-500/50 transition group">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-900/50 text-cyan-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">AI Design & Automation</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">AI-powered creative solutions, intelligent automation, AI-generated content, and digital productivity tools.</p>
+                        <button onclick="selectServiceForBooking('AI Design & Automation')" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 flex items-center space-x-1">
+                            <span>Book Service</span>
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </button>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-purple-500/50 transition group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-900/50 text-emerald-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid fa-cube"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">2D & 3D Animation</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">Creative animations, motion graphics, character animation, and visual storytelling for businesses and entertainment.</p>
+                        <button onclick="selectServiceForBooking('2D & 3D Animation')" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center space-x-1">
+                            <span>Book Service</span>
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Working Process Section -->
+            <div class="glass-panel p-8 rounded-3xl border border-purple-900/50">
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <span class="text-xs font-bold uppercase tracking-widest text-purple-400">Step-by-Step Workflow</span>
+                    <h2 class="text-2xl lg:text-3xl font-extrabold text-white mt-1">Our Working Process</h2>
+                    <p class="text-slate-400 text-sm mt-2">How we bring your ideas to life with clarity and professional precision.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                    <div class="bg-purple-950/40 border border-purple-800/40 p-5 rounded-2xl text-center relative">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-sm">1</div>
+                        <h4 class="font-bold text-sm text-white mb-1">Understand</h4>
+                        <p class="text-xs text-slate-400">Client's goal & requirements.</p>
+                    </div>
+                    <div class="bg-purple-950/40 border border-purple-800/40 p-5 rounded-2xl text-center relative">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-sm">2</div>
+                        <h4 class="font-bold text-sm text-white mb-1">Scope & Plan</h4>
+                        <p class="text-xs text-slate-400">Timeline, deliverables & pricing.</p>
+                    </div>
+                    <div class="bg-purple-950/40 border border-purple-800/40 p-5 rounded-2xl text-center relative">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-sm">3</div>
+                        <h4 class="font-bold text-sm text-white mb-1">Develop</h4>
+                        <p class="text-xs text-slate-400">Creative or digital solution execution.</p>
+                    </div>
+                    <div class="bg-purple-950/40 border border-purple-800/40 p-5 rounded-2xl text-center relative">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-sm">4</div>
+                        <h4 class="font-bold text-sm text-white mb-1">Review</h4>
+                        <p class="text-xs text-slate-400">Share preview version & collect feedback.</p>
+                    </div>
+                    <div class="bg-purple-950/40 border border-purple-800/40 p-5 rounded-2xl text-center relative">
+                        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center mx-auto mb-3 text-sm">5</div>
+                        <h4 class="font-bold text-sm text-white mb-1">Deliver</h4>
+                        <p class="text-xs text-slate-400">Complete revisions & hand over final work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI STUDIO VIEW -->
+        <section id="view-studio" class="view-section hidden space-y-8">
+            <div class="glass-panel p-6 lg:p-10 rounded-3xl border border-purple-500/30">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 bg-pink-900/40 border border-pink-500/40 px-3 py-1 rounded-full text-xs font-semibold text-pink-300 mb-2">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>IZZZY AI Creative Suite</span>
+                        </div>
+                        <h2 class="text-2xl lg:text-3xl font-extrabold text-white">AI Graphic & Video Studio</h2>
+                        <p class="text-slate-300 text-sm mt-1">Generate AI design concepts, promotional video scripts, and creative assets instantly.</p>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-purple-950 border border-purple-700/50 px-4 py-2 rounded-xl">
+                        <i class="fa-solid fa-bolt text-amber-400"></i>
+                        <span class="text-sm font-bold">Credits Available: <span id="studio-credits" class="text-purple-300">15</span></span>
+                    </div>
+                </div>
+
+                <!-- Studio Tool Tabs -->
+                <div class="flex space-x-2 border-b border-purple-900/60 pb-4 mb-6 overflow-x-auto">
+                    <button onclick="switchStudioTab('graphic')" id="studio-tab-graphic" class="studio-tab px-4 py-2 rounded-xl font-bold text-sm bg-purple-600 text-white transition flex items-center space-x-2 whitespace-nowrap">
+                        <i class="fa-solid fa-image"></i>
+                        <span>AI Graphic Concept Generator</span>
+                    </button>
+                    <button onclick="switchStudioTab('video')" id="studio-tab-video" class="studio-tab px-4 py-2 rounded-xl font-semibold text-sm bg-purple-950/60 text-purple-300 hover:bg-purple-900/40 transition flex items-center space-x-2 whitespace-nowrap">
+                        <i class="fa-solid fa-video"></i>
+                        <span>AI Video Script & Storyboard</span>
+                    </button>
+                    <button onclick="switchStudioTab('brand')" id="studio-tab-brand" class="studio-tab px-4 py-2 rounded-xl font-semibold text-sm bg-purple-950/60 text-purple-300 hover:bg-purple-900/40 transition flex items-center space-x-2 whitespace-nowrap">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>AI Brand Name & Tagline</span>
+                    </button>
+                </div>
+
+                <!-- Graphic Generator Panel -->
+                <div id="studio-panel-graphic" class="studio-panel space-y-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Design Prompt / Description</label>
+                                <textarea id="ai-graphic-prompt" rows="4" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500 placeholder-slate-500" placeholder="e.g., A futuristic luxury tech brand logo featuring neon purple and gold elements, minimalist style..."></textarea>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Design Type</label>
+                                    <select id="ai-graphic-type" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500">
+                                        <option value="Logo Branding">Logo & Branding</option>
+                                        <option value="Flyer / Poster">Flyer / Poster</option>
+                                        <option value="Social Media Banner">Social Media Banner</option>
+                                        <option value="Product Mockup">Product Mockup</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Aspect Ratio</label>
+                                    <select id="ai-graphic-ratio" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500">
+                                        <option value="1:1">Square (1:1)</option>
+                                        <option value="16:9">Landscape (16:9)</option>
+                                        <option value="9:16">Story / Reel (9:16)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button onclick="generateAiGraphic()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                <span>Generate AI Graphic (Costs 3 Credits)</span>
+                            </button>
+                        </div>
+
+                        <!-- Preview Box -->
+                        <div class="bg-purple-950/40 border border-purple-800/50 rounded-2xl p-6 flex flex-col items-center justify-center text-center min-h-[320px] relative overflow-hidden">
+                            <div id="graphic-loading" class="hidden flex flex-col items-center space-y-3">
+                                <div class="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+                                <p class="text-xs text-purple-300 font-semibold">IZZZY AI is crafting your graphic design...</p>
+                            </div>
+                            <div id="graphic-placeholder" class="flex flex-col items-center space-y-3 text-slate-400">
+                                <i class="fa-solid fa-image text-4xl text-purple-600/60"></i>
+                                <p class="text-xs">Your AI generated design concept will appear here.</p>
+                            </div>
+                            <div id="graphic-result" class="hidden w-full h-full flex flex-col items-center space-y-4">
+                                <img id="generated-image-output" src="" alt="AI Graphic" class="max-h-64 rounded-xl shadow-lg border border-purple-500/40 object-contain">
+                                <div class="flex space-x-2">
+                                    <button onclick="downloadAiGraphic()" class="bg-purple-800 hover:bg-purple-700 text-white text-xs font-bold px-4 py-2 rounded-lg transition flex items-center space-x-1.5">
+                                        <i class="fa-solid fa-download"></i><span>Download Image</span>
+                                    </button>
+                                    <button onclick="switchTab('booking')" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition flex items-center space-x-1.5">
+                                        <i class="fa-solid fa-calendar-check"><span>Book Pro Designer</span></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Script Generator Panel -->
+                <div id="studio-panel-video" class="studio-panel hidden space-y-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Video Topic / Product / Brand</label>
+                                <input type="text" id="ai-video-topic" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500 placeholder-slate-500" placeholder="e.g., 30-second promotional ad for IZZZY PRODUCTIONS digital services">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Video Style / Tone</label>
+                                <select id="ai-video-style" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500">
+                                    <option value="Cinematic & Professional">Cinematic & Professional</option>
+                                    <option value="Energetic Social Media Ad">Energetic Social Media Ad (TikTok / Reels)</option>
+                                    <option value="Corporate Explainer">Corporate Explainer</option>
+                                    <option value="Creative Storytelling">Creative Storytelling</option>
+                                </select>
+                            </div>
+                            <button onclick="generateAiVideoScript()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-clapperboard"></i>
+                                <span>Generate Video Script & Storyboard (Costs 2 Credits)</span>
+                            </button>
+                        </div>
+
+                        <!-- Script Result Box -->
+                        <div class="bg-purple-950/40 border border-purple-800/50 rounded-2xl p-6 flex flex-col justify-between min-h-[320px]">
+                            <div id="video-loading" class="hidden flex flex-col items-center justify-center h-full space-y-3">
+                                <div class="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+                                <p class="text-xs text-purple-300 font-semibold">IZZZY AI is writing your video script...</p>
+                            </div>
+                            <div id="video-placeholder" class="flex flex-col items-center justify-center h-full space-y-3 text-slate-400">
+                                <i class="fa-solid fa-video text-4xl text-purple-600/60"></i>
+                                <p class="text-xs">Your AI video script and storyboard breakdown will appear here.</p>
+                            </div>
+                            <div id="video-result" class="hidden h-full flex flex-col justify-between space-y-4">
+                                <div id="video-script-content" class="bg-purple-900/30 border border-purple-700/40 p-4 rounded-xl text-xs text-slate-200 overflow-y-auto max-h-72 space-y-2"></div>
+                                <button onclick="selectServiceForBooking('Video Editing')" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold py-2.5 rounded-lg transition flex items-center justify-center space-x-2">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                    <span>Book Video Editing Team for this Script</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand & Tagline Generator Panel -->
+                <div id="studio-panel-brand" class="studio-panel hidden space-y-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Business / Project Niche</label>
+                                <input type="text" id="ai-brand-niche" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="e.g., Fashion e-commerce, Tech startup, Creator agency...">
+                            </div>
+                            <button onclick="generateAiBrand()" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <span>Generate Brand Names & Taglines (Costs 1 Credit)</span>
+                            </button>
+                        </div>
+                        <div class="bg-purple-950/40 border border-purple-800/50 rounded-2xl p-6 flex flex-col justify-center min-h-[280px]">
+                            <div id="brand-loading" class="hidden flex flex-col items-center space-y-3">
+                                <div class="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+                                <p class="text-xs text-purple-300 font-semibold">Brainstorming brand ideas...</p>
+                            </div>
+                            <div id="brand-placeholder" class="text-center text-slate-400">
+                                <i class="fa-solid fa-lightbulb text-4xl text-purple-600/60 mb-2"></i>
+                                <p class="text-xs">Brand name suggestions and catchy taglines will appear here.</p>
+                            </div>
+                            <div id="brand-result" class="hidden text-xs text-slate-200 space-y-3 overflow-y-auto max-h-64"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI ASSISTANT VIEW -->
+        <section id="view-assistant" class="view-section hidden space-y-6">
+            <div class="glass-panel p-6 lg:p-8 rounded-3xl border border-purple-500/30 flex flex-col h-[75vh]">
+                <div class="flex items-center justify-between pb-4 border-b border-purple-900/50 mb-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center text-white font-bold shadow-lg">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-bold text-white">IZZZY Creative & AI Assistant</h2>
+                            <p class="text-[11px] text-purple-300">Ask anything about design, video editing, branding, or IZZZY services.</p>
+                        </div>
+                    </div>
+                    <button onclick="clearChat()" class="text-xs text-slate-400 hover:text-white bg-purple-950/60 px-3 py-1.5 rounded-lg border border-purple-800/40 transition">Clear Chat</button>
+                </div>
+
+                <!-- Chat Messages Box -->
+                <div id="chat-messages" class="flex-grow overflow-y-auto space-y-4 pr-2 mb-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">AI</div>
+                        <div class="bg-purple-950/80 border border-purple-800/50 p-4 rounded-2xl text-xs text-slate-200 max-w-xl leading-relaxed">
+                            Hello! I am your IZZZY PRODUCTIONS AI Assistant. How can I help you with your graphic design, video editing, animation, or digital project today?
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Input Form -->
+                <div class="flex items-center space-x-2 pt-2 border-t border-purple-900/50">
+                    <input type="text" id="chat-input" onkeypress="handleChatKey(event)" class="flex-grow bg-purple-950/60 border border-purple-800/60 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500 placeholder-slate-500" placeholder="Type your creative question here...">
+                    <button onclick="sendChatMessage()" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg flex items-center space-x-2">
+                        <span>Send</span>
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEARNING HUB VIEW -->
+        <section id="view-learning" class="view-section hidden space-y-8">
+            <div class="glass-panel p-6 lg:p-10 rounded-3xl border border-purple-500/30">
+                <div class="max-w-3xl mb-8">
+                    <div class="inline-flex items-center space-x-2 bg-cyan-900/40 border border-cyan-500/40 px-3 py-1 rounded-full text-xs font-semibold text-cyan-300 mb-2">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>AI Learning & Digital Education</span>
+                    </div>
+                    <h2 class="text-2xl lg:text-3xl font-extrabold text-white">Master Digital Skills & AI</h2>
+                    <p class="text-slate-300 text-sm mt-1">Explore practical guides, tutorials, and resources curated by IZZZY PRODUCTIONS to help you build professional skills in graphic design, video editing, and AI tools.</p>
+                </div>
+
+                <!-- Learning Modules Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Module 1 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-cyan-500/50 transition flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-purple-900/50 text-purple-400 flex items-center justify-center font-bold mb-4">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-400">Graphic Design</span>
+                            <h3 class="text-lg font-bold text-white mt-1 mb-2">Graphic Design Fundamentals & Branding</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mb-4">Learn color theory, typography, hierarchy, and how to create stunning promotional flyers and logos that stand out.</p>
+                        </div>
+                        <button onclick="openLessonModal('Graphic Design Fundamentals', 'Color theory forms the foundation of visual communication. Primary, secondary, and complementary colors evoke specific emotions. Typography pairing ensures your message is legible and striking. In professional branding, consistency across logos, business cards, and social media creates trust and recognition.')" class="w-full bg-purple-950/60 hover:bg-purple-900 text-purple-300 text-xs font-bold py-2.5 rounded-xl transition border border-purple-700/40">
+                            Start Learning
+                        </button>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-cyan-500/50 transition flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-pink-900/50 text-pink-400 flex items-center justify-center font-bold mb-4">
+                                <i class="fa-solid fa-clapperboard"></i>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-pink-400">Video Editing</span>
+                            <h3 class="text-lg font-bold text-white mt-1 mb-2">Cinematic Video Editing & Storytelling</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mb-4">Master pacing, cutdowns, B-roll integration, color grading, and audio syncing for captivating social media ads and promotional videos.</p>
+                        </div>
+                        <button onclick="openLessonModal('Cinematic Video Editing & Storytelling', 'Great video editing is all about pacing and rhythm. The first 3 seconds of any video must hook the viewer. Use B-roll footage to cover jump cuts, apply clean transitions, and ensure background music matches the emotional beat of the story.')" class="w-full bg-purple-950/60 hover:bg-purple-900 text-purple-300 text-xs font-bold py-2.5 rounded-xl transition border border-purple-700/40">
+                            Start Learning
+                        </button>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="glass-panel p-6 rounded-2xl border border-purple-900/50 hover:border-cyan-500/50 transition flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-cyan-900/50 text-cyan-400 flex items-center justify-center font-bold mb-4">
+                                <i class="fa-solid fa-robot"></i>
+                            </div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-400">AI Automation</span>
+                            <h3 class="text-lg font-bold text-white mt-1 mb-2">Prompt Engineering & AI Workflows</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed mb-4">Discover how to write precise prompts for generative AI models, streamline content creation, and boost daily productivity.</p>
+                        </div>
+                        <button onclick="openLessonModal('Prompt Engineering & AI Workflows', 'Prompt engineering is the art of giving clear instructions to AI models. Structure your prompts with context, role, specific task constraints, and desired output formats. Combining AI tools with human creativity multiplies your productivity tenfold.')" class="w-full bg-purple-950/60 hover:bg-purple-900 text-purple-300 text-xs font-bold py-2.5 rounded-xl transition border border-purple-700/40">
+                            Start Learning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING VIEW -->
+        <section id="view-booking" class="view-section hidden space-y-8">
+            <div class="glass-panel p-6 lg:p-10 rounded-3xl border border-purple-500/30 max-w-4xl mx-auto">
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Secure Your Project</span>
+                    <h2 class="text-2xl lg:text-3xl font-extrabold text-white mt-1">Book a Professional Service</h2>
+                    <p class="text-slate-300 text-sm mt-1">Fill out the form below to request graphic design, video editing, web development, or AI solutions from IZZZY PRODUCTIONS.</p>
+                </div>
+
+                <form id="booking-form" onsubmit="submitBooking(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Your Full Name</label>
+                            <input type="text" id="book-name" required class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="e.g., John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Email Address</label>
+                            <input type="email" id="book-email" required class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="e.g., john@example.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Select Service</label>
+                            <select id="book-service" class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500">
+                                <option value="Graphic Design">🎨 Graphic Design & Branding</option>
+                                <option value="Video Editing">🎬 Video Editing & Media Production</option>
+                                <option value="AI Design & Automation">🤖 AI Design & Automation</option>
+                                <option value="2D & 3D Animation">🎥 2D & 3D Animation</option>
+                                <option value="Website Development">🌐 Website Development</option>
+                                <option value="AI Learning & Education">📚 AI Learning & Digital Education</option>
+                                <option value="Digital Publishing">📖 Digital Publishing & Writing</option>
+                                <option value="Creative Solutions">💡 Creative Solutions</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Phone Number / WhatsApp</label>
+                            <input type="text" id="book-phone" required class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="e.g., 09055852274">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-purple-300 mb-2">Project Details & Requirements</label>
+                        <textarea id="book-details" rows="4" required class="w-full bg-purple-950/50 border border-purple-800/60 rounded-xl p-3.5 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="Describe your vision, goals, timeline, and deliverables..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold py-4 rounded-xl transition shadow-lg flex items-center justify-center space-x-2 text-base">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Confirm Project Booking</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ABOUT VIEW -->
+        <section id="view-about" class="view-section hidden space-y-8">
+            <div class="glass-panel p-8 rounded-3xl border border-purple-500/30 max-w-3xl mx-auto space-y-6">
+                <h2 class="text-2xl font-extrabold text-white">About IZZZY PRODUCTIONS</h2>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    IZZZY PRODUCTIONS is a leading creative agency and digital innovation hub. We empower creators, startups, and enterprises with elite design, video production, AI-powered automation, and comprehensive digital education.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2 text-xs text-slate-300">
+                    <div class="bg-purple-950/50 p-4 rounded-xl border border-purple-800/40">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-envelope text-purple-400 mr-2"></i>Email Support</h4>
+                        <a href="mailto:mrizzzy42@gmail.com" class="text-purple-300 hover:underline">mrizzzy42@gmail.com</a>
+                    </div>
+                    <div class="bg-purple-950/50 p-4 rounded-xl border border-purple-800/40">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-phone text-emerald-400 mr-2"></i>Contact Line</h4>
+                        <span>+234 905 585 2274</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="glass-panel border-t border-purple-900/40 px-4 lg:px-8 py-6 mt-12 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-white">IZZZY PRODUCTIONS</span>
+                <span>— Your Creativity, Our Innovation.</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://izzzy-productions.floot.app" target="_blank" class="hover:text-purple-300 transition">Website</a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-purple-300 transition">Facebook</a>
+                <a href="mailto:mrizzzy42@gmail.com" class="hover:text-purple-300 transition">Email Us</a>
+            </div>
+            <p>&copy; 2026 IZZZY PRODUCTIONS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AUTHENTICATION GATEWAY MODAL -->
+    <div id="auth-modal" class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="glass-panel p-6 lg:p-8 rounded-3xl border border-purple-500/50 max-w-md w-full space-y-6 glow-effect relative">
+            <div class="text-center space-y-2">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center text-white font-extrabold text-2xl mx-auto shadow-lg">
+                    IP
+                </div>
+                <h3 class="text-2xl font-extrabold text-white gradient-text">IZZZY PRODUCTIONS</h3>
+                <p class="text-xs text-purple-300">Please sign in or create an account to access features</p>
+            </div>
+
+            <!-- Auth Mode Switcher Tabs -->
+            <div class="flex bg-purple-950/80 p-1 rounded-xl border border-purple-800/60">
+                <button type="button" onclick="switchAuthTab('login')" id="tab-auth-login" class="flex-1 py-2 text-xs font-bold rounded-lg bg-purple-600 text-white transition">Log In</button>
+                <button type="button" onclick="switchAuthTab('signup')" id="tab-auth-signup" class="flex-1 py-2 text-xs font-bold rounded-lg text-purple-300 hover:text-white transition">Sign Up</button>
+            </div>
+
+            <!-- Auth Form -->
+            <form id="auth-form" onsubmit="handleAuthSubmit(event)" class="space-y-4">
+                <div id="auth-name-field" class="hidden">
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-purple-300 mb-1">Full Name</label>
+                    <input type="text" id="auth-name" class="w-full bg-purple-950/60 border border-purple-800/60 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="e.g., Alex Johnson">
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-purple-300 mb-1">Email Address</label>
+                    <input type="email" id="auth-email" required class="w-full bg-purple-950/60 border border-purple-800/60 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="e.g., alex@example.com">
+                </div>
+
+                <div>
+                    <label class="block text-[11px] font-bold uppercase tracking-wider text-purple-300 mb-1">Password</label>
+                    <input type="password" id="auth-password" required class="w-full bg-purple-950/60 border border-purple-800/60 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-purple-500" placeholder="••••••••">
+                </div>
+
+                <button type="submit" id="auth-submit-btn" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-3.5 rounded-xl transition shadow-lg flex items-center justify-center space-x-2 text-sm mt-2">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span id="auth-btn-text">Log In to Continue</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODALS (Credit Refill & Learning Lesson & Success) -->
+    <div id="modal-container" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <!-- Credit Modal -->
+        <div id="modal-credit" class="modal-content hidden glass-panel p-6 rounded-3xl border border-purple-500/50 max-w-md w-full space-y-4 text-center">
+            <div class="w-14 h-14 rounded-2xl bg-purple-600/30 border border-purple-500/50 text-amber-400 flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white">Refill AI Credits</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">You have run out of AI generation credits. Refill your credits instantly or book a professional designer from IZZZY PRODUCTIONS for custom projects.</p>
+            <div class="flex space-x-3 pt-2">
+                <button onclick="refillCredits()" class="flex-grow bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 rounded-xl text-xs transition">Refill +20 Credits</button>
+                <button onclick="closeModal()" class="bg-slate-800 text-slate-300 font-semibold px-4 py-3 rounded-xl text-xs">Close</button>
+            </div>
+        </div>
+
+        <!-- Lesson Modal -->
+        <div id="modal-lesson" class="modal-content hidden glass-panel p-6 rounded-3xl border border-cyan-500/50 max-w-lg w-full space-y-4">
+            <div class="flex items-center justify-between">
+                <h3 id="lesson-modal-title" class="text-lg font-bold text-white">Lesson Title</h3>
+                <button onclick="closeModal()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <p id="lesson-modal-body" class="text-xs text-slate-300 leading-relaxed"></p>
+            <div class="pt-2 flex justify-end">
+                <button onclick="closeModal()" class="bg-cyan-600 hover:bg-cyan-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition">Got it!</button>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="modal-success" class="modal-content hidden glass-panel p-6 rounded-3xl border border-emerald-500/50 max-w-md w-full space-y-4 text-center">
+            <div class="w-14 h-14 rounded-2xl bg-emerald-600/30 border border-emerald-500/50 text-emerald-400 flex items-center justify-center text-2xl mx-auto">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 id="success-modal-title" class="text-xl font-bold text-white">Success!</h3>
+            <p id="success-modal-body" class="text-xs text-slate-300 leading-relaxed"></p>
+            <button onclick="closeModal()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs transition">Continue</button>
+        </div>
+    </div>
+
+    <script>
+        // State Management
+        let credits = 15;
+        let isAuthenticated = false;
+        let authMode = 'login'; // 'login' or 'signup'
+        let currentUser = null;
+
+        function checkAuthGate() {
+            const authModal = document.getElementById('auth-modal');
+            if (!isAuthenticated) {
+                authModal.classList.remove('hidden');
+            } else {
+                authModal.classList.add('hidden');
+            }
+        }
+
+        function switchAuthTab(mode) {
+            authMode = mode;
+            const loginTab = document.getElementById('tab-auth-login');
+            const signupTab = document.getElementById('tab-auth-signup');
+            const nameField = document.getElementById('auth-name-field');
+            const btnText = document.getElementById('auth-btn-text');
+
+            if (mode === 'signup') {
+                signupTab.classList.add('bg-purple-600', 'text-white');
+                signupTab.classList.remove('text-purple-300');
+                loginTab.classList.remove('bg-purple-600', 'text-white');
+                loginTab.classList.add('text-purple-300');
+                nameField.classList.remove('hidden');
+                btnText.innerText = 'Create Account & Continue';
+            } else {
+                loginTab.classList.add('bg-purple-600', 'text-white');
+                loginTab.classList.remove('text-purple-300');
+                signupTab.classList.remove('bg-purple-600', 'text-white');
+                signupTab.classList.add('text-purple-300');
+                nameField.classList.add('hidden');
+                btnText.innerText = 'Log In to Continue';
+            }
+        }
+
+        function handleAuthSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('auth-email').value.trim();
+            const password = document.getElementById('auth-password').value.trim();
+            const name = document.getElementById('auth-name').value.trim();
+
+            if (!email || !password) return;
+            if (authMode === 'signup' && !name) return;
+
+            isAuthenticated = true;
+            currentUser = {
+                name: authMode === 'signup' ? name : email.split('@')[0],
+                email: email
+            };
+
+            checkAuthGate();
+            showSuccessModal('Welcome!', `Logged in successfully as ${currentUser.name}. You can now explore all features.`);
+        }
+
+        // Initialize state on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            checkAuthGate();
+        });
+
+        function updateCreditsDisplay() {
+            document.getElementById('credit-count').innerText = credits;
+            document.getElementById('studio-credits').innerText = credits;
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function switchTab(tabId) {
+            if (!isAuthenticated) {
+                checkAuthGate();
+                return;
+            }
+            document.querySelectorAll('.view-section').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.nav-btn').forEach(el => {
+                el.classList.remove('bg-purple-900/60', 'text-white');
+                el.classList.add('text-purple-300');
+            });
+
+            document.getElementById(`view-${tabId}`).classList.remove('hidden');
+            const activeBtn = document.getElementById(`nav-${tabId}`);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-purple-900/60', 'text-white');
+                activeBtn.classList.remove('text-purple-300');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function switchStudioTab(subId) {
+            document.querySelectorAll('.studio-panel').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.studio-tab').forEach(el => {
+                el.classList.remove('bg-purple-600', 'text-white');
+                el.classList.add('bg-purple-950/60', 'text-purple-300');
+            });
+
+            document.getElementById(`studio-panel-${subId}`).classList.remove('hidden');
+            const activeTab = document.getElementById(`studio-tab-${subId}`);
+            activeTab.classList.add('bg-purple-600', 'text-white');
+            activeTab.classList.remove('bg-purple-950/60', 'text-purple-300');
+        }
+
+        function selectServiceForBooking(serviceName) {
+            switchTab('booking');
+            const select = document.getElementById('book-service');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value.includes(serviceName) || select.options[i].text.includes(serviceName)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        function openCreditModal() {
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.getElementById('modal-credit').classList.remove('hidden');
+            document.getElementById('modal-lesson').classList.add('hidden');
+            document.getElementById('modal-success').classList.add('hidden');
+        }
+
+        function refillCredits() {
+            credits += 20;
+            updateCreditsDisplay();
+            closeModal();
+            showSuccessModal('Credits Refilled!', 'Successfully added 20 AI credits to your account.');
+        }
+
+        function openLessonModal(title, body) {
+            document.getElementById('lesson-modal-title').innerText = title;
+            document.getElementById('lesson-modal-body').innerText = body;
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.getElementById('modal-lesson').classList.remove('hidden');
+            document.getElementById('modal-credit').classList.add('hidden');
+            document.getElementById('modal-success').classList.add('hidden');
+        }
+
+        function showSuccessModal(title, body) {
+            document.getElementById('success-modal-title').innerText = title;
+            document.getElementById('success-modal-body').innerText = body;
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.getElementById('success-modal').classList.remove('hidden');
+            document.getElementById('modal-credit').classList.add('hidden');
+            document.getElementById('modal-lesson').classList.add('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-container').classList.add('hidden');
+            document.querySelectorAll('.modal-content').forEach(el => el.classList.add('hidden'));
+        }
+
+        // AI Graphic Generator using Gemini API (gemini-3.1-flash-image)
+        async function generateAiGraphic() {
+            if (credits < 3) {
+                openCreditModal();
+                return;
+            }
+
+            const prompt = document.getElementById('ai-graphic-prompt').value.trim();
+            const type = document.getElementById('ai-graphic-type').value;
+            const ratio = document.getElementById('ai-graphic-ratio').value;
+
+            if (!prompt) {
+                showSuccessModal('Prompt Required', 'Please enter a description for your graphic design.');
+                return;
+            }
+
+            credits -= 3;
+            updateCreditsDisplay();
+
+            document.getElementById('graphic-placeholder').classList.add('hidden');
+            document.getElementById('graphic-result').classList.add('hidden');
+            document.getElementById('graphic-loading').classList.remove('hidden');
+
+            try {
+                const fullPrompt = `Create a professional ${type} design for: ${prompt}. Clean layout, high visual appeal, commercial quality.`;
+                const payload = {
+                    contents: [{ role: 'user', parts: [{ text: fullPrompt }] }],
+                    generationConfig: {
+                        responseModalities: ['IMAGE'],
+                        imageConfig: { aspectRatio: ratio }
+                    }
+                };
+
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image:generateContent?key=${apiKey}`;
+                
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const part = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
+
+                if (part) {
+                    const imageUrl = `data:${part.inlineData.mimeType};base64,${part.inlineData.data}`;
+                    document.getElementById('generated-image-output').src = imageUrl;
+                    document.getElementById('graphic-loading').classList.add('hidden');
+                    document.getElementById('graphic-result').classList.remove('hidden');
+                } else {
+                    throw new Error('Image generation failed.');
+                }
+            } catch (error) {
+                console.error(error);
+                document.getElementById('generated-image-output').src = `https://placehold.co/600x400/4c1d95/ffffff?text=${encodeURIComponent(prompt.substring(0, 30))}`;
+                document.getElementById('graphic-loading').classList.add('hidden');
+                document.getElementById('graphic-result').classList.remove('hidden');
+            }
+        }
+
+        function downloadAiGraphic() {
+            const imgSrc = document.getElementById('generated-image-output').src;
+            const a = document.createElement('a');
+            a.href = imgSrc;
+            a.download = 'izzzy-ai-design.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        // AI Video Script Generator using Gemini API (gemini-3-flash-preview)
+        async function generateAiVideoScript() {
+            if (credits < 2) {
+                openCreditModal();
+                return;
+            }
+
+            const topic = document.getElementById('ai-video-topic').value.trim();
+            const style = document.getElementById('ai-video-style').value;
+
+            if (!topic) {
+                showSuccessModal('Topic Required', 'Please enter a video topic or product name.');
+                return;
+            }
+
+            credits -= 2;
+            updateCreditsDisplay();
+
+            document.getElementById('video-placeholder').classList.add('hidden');
+            document.getElementById('video-result').classList.add('hidden');
+            document.getElementById('video-loading').classList.remove('hidden');
+
+            try {
+                const systemPrompt = "Act as an expert video producer and director at IZZZY PRODUCTIONS. Create a professional, engaging video script and storyboard breakdown.";
+                const userQuery = `Write a video script for topic: "${topic}" with style "${style}". Include Visuals and Voiceover/Audio breakdown for 3 scenes.`;
+
+                const payload = {
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                };
+
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text || "Script generation completed.";
+
+                document.getElementById('video-script-content').innerText = text;
+                document.getElementById('video-loading').classList.add('hidden');
+                document.getElementById('video-result').classList.remove('hidden');
+            } catch (error) {
+                console.error(error);
+                document.getElementById('video-script-content').innerText = "Scene 1: Hook the viewer with vibrant visuals.\nScene 2: Present the core solution by IZZZY PRODUCTIONS.\nScene 3: Clear Call to Action.";
+                document.getElementById('video-loading').classList.add('hidden');
+                document.getElementById('video-result').classList.remove('hidden');
+            }
+        }
+
+        // AI Brand Generator
+        async function generateAiBrand() {
+            if (credits < 1) {
+                openCreditModal();
+                return;
+            }
+
+            const niche = document.getElementById('ai-brand-niche').value.trim();
+            if (!niche) {
+                showSuccessModal('Niche Required', 'Please enter your business or project niche.');
+                return;
+            }
+
+            credits -= 1;
+            updateCreditsDisplay();
+
+            document.getElementById('brand-placeholder').classList.add('hidden');
+            document.getElementById('brand-result').classList.add('hidden');
+            document.getElementById('brand-loading').classList.remove('hidden');
+
+            try {
+                const systemPrompt = "Act as a branding expert. Provide 3 creative brand names and matching taglines for the given niche.";
+                const userQuery = `Niche: ${niche}`;
+
+                const payload = {
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                };
+
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text || "Brand suggestions generated.";
+
+                document.getElementById('brand-result').innerText = text;
+                document.getElementById('brand-loading').classList.add('hidden');
+                document.getElementById('brand-result').classList.remove('hidden');
+            } catch (error) {
+                document.getElementById('brand-result').innerText = "1. NovaSphere - Innovate. Design. Elevate.\n2. AuraCraft - Your Vision, Amplified.\n3. ApexDigital - Future Proof Solutions.";
+                document.getElementById('brand-loading').classList.add('hidden');
+                document.getElementById('brand-result').classList.remove('hidden');
+            }
+        }
+
+        // AI Chat Assistant
+        async function sendChatMessage() {
+            const inputEl = document.getElementById('chat-input');
+            const message = inputEl.value.trim();
+            if (!message) return;
+
+            const chatContainer = document.getElementById('chat-messages');
+
+            // Append User Message
+            chatContainer.innerHTML += `
+                <div class="flex items-start justify-end space-x-3">
+                    <div class="bg-purple-600 text-white p-4 rounded-2xl text-xs max-w-xl leading-relaxed">${escapeHtml(message)}</div>
+                    <div class="w-8 h-8 rounded-full bg-pink-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">You</div>
+                </div>
+            `;
+            inputEl.value = '';
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            // Loading AI bubble
+            const loadingId = 'ai-loading-' + Date.now();
+            chatContainer.innerHTML += `
+                <div id="${loadingId}" class="flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">AI</div>
+                    <div class="bg-purple-950/80 border border-purple-800/50 p-4 rounded-2xl text-xs text-slate-300 animate-pulse">Thinking...</div>
+                </div>
+            `;
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+
+            try {
+                const systemPrompt = "You are the expert AI consultant for IZZZY PRODUCTIONS (Create. Design. Learn. Automate. Grow.). You help clients with graphic design, video editing, AI automation, animations, and web development inquiries.";
+                
+                const payload = {
+                    contents: [{ parts: [{ text: message }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                };
+
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const aiReply = result?.candidates?.[0]?.content?.parts?.[0]?.text || "I am here to help you with IZZZY PRODUCTIONS services!";
+
+                document.getElementById(loadingId).remove();
+                chatContainer.innerHTML += `
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">AI</div>
+                        <div class="bg-purple-950/80 border border-purple-800/50 p-4 rounded-2xl text-xs text-slate-200 max-w-xl leading-relaxed">${escapeHtml(aiReply)}</div>
+                    </div>
+                `;
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            } catch (error) {
+                document.getElementById(loadingId).remove();
+                chatContainer.innerHTML += `
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">AI</div>
+                        <div class="bg-purple-950/80 border border-purple-800/50 p-4 rounded-2xl text-xs text-slate-200 max-w-xl leading-relaxed">I'd love to help! Please feel free to book a consultation with IZZZY PRODUCTIONS or check our services.</div>
+                    </div>
+                `;
+            }
+        }
+
+        function handleChatKey(event) {
+            if (event.key === 'Enter') {
+                sendChatMessage();
+            }
+        }
+
+        function clearChat() {
+            document.getElementById('chat-messages').innerHTML = `
+                <div class="flex items-start space-x-3">
+                    <div class="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs font-bold flex-shrink-0">AI</div>
+                    <div class="bg-purple-950/80 border border-purple-800/50 p-4 rounded-2xl text-xs text-slate-200 max-w-xl leading-relaxed">
+                        Level up your creative projects with IZZZY PRODUCTIONS. How can I help you today?
+                    </div>
+                </div>
+            `;
+        }
+
+        function submitBooking(event) {
+            event.preventDefault();
+            const name = document.getElementById('book-name').value;
+            const service = document.getElementById('book-service').value;
+            const phone = document.getElementById('book-phone').value;
+
+            const bookingRef = 'IZZZY-' + Math.floor(100000 + Math.random() * 900000);
+            showSuccessModal('Booking Confirmed!', `Thank you ${name}! Your booking for "${service}" has been received. Reference ID: ${bookingRef}. We will contact you shortly via ${phone} or email.`);
+            document.getElementById('booking-form').reset();
+        }
+
+        function escapeHtml(text) {
+            const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+            return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+        }
+    </script>
+</body>
+</html>
